@@ -179,11 +179,12 @@ fun FloatingNavigationView(
                                     .offset(y = offsetY.value.dp)
                                     .fillMaxWidth()
                                     .background(backgroundColor)
+                                    .clickable { onMenuItemClick(item) }
                             ) {
                                 Text(
                                     text = item,
                                     modifier = Modifier
-                                        .clickable { onMenuItemClick(item) }
+
                                         .padding(16.dp)
                                 )
                             }
